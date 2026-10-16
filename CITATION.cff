@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "Stationary Strings Theorem VII: Self-Consistent Vortex Saturation in CERN ALPHA Antimatter Traps, First-Principles Hyperfine Lineshape Derivation, and the Exact 511 keV Ore-Powell Spectrum Resolution"
+message: "If you use this work, please cite it."
+type: unpublished
+authors:
+  - family-names: Meral
+    given-names: Fahri
+date-released: 2026-10-16
+version: v1
+repository-code: "https://github.com/fahrim/stationary-strings-vii"
+license: CC-BY-4.0
+keywords:
+  - Navier-Stokes
+  - antimatter trap
+  - ALPHA
+  - hyperfine lineshape
+  - Ore-Powell
+  - positron annihilation

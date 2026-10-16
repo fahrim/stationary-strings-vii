@@ -1,0 +1,19 @@
+{
+  "title": "Stationary Strings Theorem VII: Self-Consistent Vortex Saturation in CERN ALPHA Antimatter Traps, First-Principles Hyperfine Lineshape Derivation, and the Exact 511 keV Ore-Powell Spectrum Resolution",
+  "description": "Seventh link of the series (October 2026): SDR-EVC rotating-wall torque discrepancy resolved (Test T16), first-principles hyperfine lineshape and flux-drift analysis (Test T17), exact Ore-Powell logarithmic correction with Galactic 511 keV rate (Test T18). Full paper in Turkish and English. Tests T16-T18 run with the solver in the Paper V repository (stationary-strings-v).",
+  "creators": [
+    {
+      "name": "Meral, Fahri"
+    }
+  ],
+  "license": {
+    "id": "CC-BY-4.0"
+  },
+  "keywords": [
+    "antimatter trap",
+    "ALPHA",
+    "hyperfine lineshape",
+    "Ore-Powell",
+    "positron annihilation"
+  ]
+}
