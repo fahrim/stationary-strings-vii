@@ -2,6 +2,10 @@
 
 > **Türkçe:** [README_TR.md](./README_TR.md)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23427566.svg)](https://doi.org/10.5281/zenodo.23427566)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 **Stationary Strings Theorem VII: Self-Consistent Vortex Saturation in CERN ALPHA Antimatter Traps, First-Principles Hyperfine Lineshape Derivation, and the Exact 511 keV Ore–Powell Spectrum Resolution**
 
 Author: Fahri Meral · Date: October 17, 2026 · Version: v1 (Paper VII)
@@ -47,6 +51,20 @@ python duran_sicimler_sim/generate_figures.py  # Figure 1 (+_en)
 - T19: CERN BASE-STEP 2026 road transport (`92` antiprotons, `7.5 km / 24 min`,
   `ΔC = 20 fF / Δf = 122 Hz`) — Theorem 5 FENE-P Lyapunov stability (`r_-^max = 0.153 µm`,
   `92/92 = 100%` survival, `M_safety = 2.55e7`).
+
+## Citation
+
+```bibtex
+@misc{meral2026duranVII,
+  author = {Fahri Meral},
+  title  = {Stationary Strings Theorem VII: Self-Consistent Vortex Saturation in CERN ALPHA Antimatter Traps, First-Principles Hyperfine Lineshape Derivation, and the Exact 511 keV Ore-Powell Spectrum Resolution},
+  year   = {2026},
+  doi    = {10.5281/zenodo.23427566},
+  url    = {https://github.com/fahrim/stationary-strings-vii}
+}
+```
+
+See also `CITATION.cff`.
 
 ## License
 

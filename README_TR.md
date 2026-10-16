@@ -2,6 +2,10 @@
 
 > **English:** [README.md](./README.md)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23427566.svg)](https://doi.org/10.5281/zenodo.23427566)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 **Duran Sicimler Teoremi VII: CERN ALPHA Antimadde Tuzaklarında Öz-Tutarlı Girdap Doyumu, İlk-İlkelerden Hiperince Rezonans Çizgi Şekli ve 511 keV Ore–Powell Spektrum Çözümü**
 
 Yazar: Fahri Meral · Tarih: 17 Ekim 2026 · Sürüm: v1 (Makale VII)
@@ -46,6 +50,20 @@ python duran_sicimler_sim/generate_figures.py  # Şekil 1 (+_en)
 - T19: CERN BASE-STEP 2026 karayolu taşıması (`92` antiproton, `7,5 km / 24 dk`,
   `ΔC = 20 fF / Δf = 122 Hz`) — Teorem 5 FENE-P Lyapunov kararlılığı (`r_-^max = 0,153 µm`,
   `92/92 = %100` hayatta kalma, `M_safety = 2,55e7`).
+
+## Alıntı
+
+```bibtex
+@misc{meral2026duranVII,
+  author = {Fahri Meral},
+  title  = {Duran Sicimler Teoremi VII: CERN ALPHA Antimadde Tuzaklarında Öz-Tutarlı Girdap Doyumu, İlk-İlkelerden Hiperince Rezonans Çizgi Şekli ve 511 keV Ore-Powell Spektrum Çözümü},
+  year   = {2026},
+  doi    = {10.5281/zenodo.23427566},
+  url    = {https://github.com/fahrim/stationary-strings-vii}
+}
+```
+
+`CITATION.cff` dosyasına da bakınız.
 
 ## Lisans
 
