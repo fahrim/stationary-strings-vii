@@ -31,7 +31,7 @@
 Teorem I--VI serisinin devamı olarak bu 7.\ çalışmada, Eylül 2026 Navier--Stokes--FENE-P iç-çekirdek girdap dinamiğinin 2025--2026 CERN antimadde deneylerindeki dört açık laboratuvar/gözlem problemine uygulaması sunulmaktadır:
 \begin{enumerate}
     \item ALPHA 2025 SDR-EVC ``dönen duvar'' tork uyuşmazlığı: kaymasız ideal yarıçap $r_p^{\mathrm{ideal}} = 0.0988849784\text{ mm}$ ($< 0.16\text{ mm}$) aşırı sıkışır; Teorem V geri-tepkiyle $\mu_s^* = 0.20317683698063987$ (\texttt{brentq}, kalıntı $< 10^{-12}\text{ m}$) bulunur. Hiçbir fit yapmadan doğrudan Teorem 6 sabiti $\mu_s^{\mathrm{Meral}} = 2\sqrt{2}\Lambda_{\mathrm{Meral}}^{(0)} = 0.2044088237$ (\%0.61 uyum) ve Teorem 2 sabiti $\mu_s^{\mathrm{geom}} = \beta_0^2/(1+\beta_0^2) = 0.2000$ (\%1.56 uyum) konulduğunda $r_p^{\mathrm{th}} = 0.16079\text{ mm}$ ($\vert{}\Delta r_p\vert{} = 0.79\,\mu\text{m}$) elde edilir; aynı sabit örneklem-dışı $N_{e^+}=3.4\times 10^6$ pozitron plazmasında $r_p^{\mathrm{eff}}(e^+) = 0.4517\text{ mm}$ vererek deneysel $[0.30, 0.50]\text{ mm}$ bandına tam düşer (\textbf{Test T16}).
-    \item ALPHA 2026 4 ppm hiperince rezonans: $B_1=1.03\text{ T}$ ($-72.82\text{ kHz/saat}$) ve $B_2=1.07\text{ T}$ ($-75.64\text{ kHz/saat}$) sürüklenmeleri Breit--Rabi türevlerinden ($28.0182/28.0187\text{ GHz/T}$) $\dot{B} = -2.599/-2.700\,\mu\text{T/saat}$ (ECR ölçümü $-2.50/-2.60\pm0.10\,\mu\text{T/saat}$ ile $1\sigma$ uyum) ve sıfır-parametreli oran testi $\vert{}R_{\mathrm{th}}-R_{\mathrm{exp}}\vert{} = 1.28\times 10^{-4}$ ile doğrulanır; Teorem 4 eğrilikten tek analitik çizgi şekli $g_{\mathrm{vortex}}(x)$ türetilir (\textbf{Test T17}).
+    \item ALPHA 2026 4 ppm hiperince rezonans: $B_1=1.03\text{ T}$ ($-72.82\text{ kHz/saat}$) ve $B_2=1.07\text{ T}$ ($-75.64\text{ kHz/saat}$) sürüklenmeleri Breit--Rabi türevlerinden ($28.0080/28.0093\text{ GHz/T}$) $\dot{B} = -2.600/-2.701\,\mu\text{T/saat}$ (ECR ölçümü $-2.50/-2.60\pm0.10\,\mu\text{T/saat}$ ile $1\sigma$ uyum) ve sıfır-parametreli oran testi $\vert{}R_{\mathrm{th}}-R_{\mathrm{exp}}\vert{} = 1.55\times 10^{-4}$ ile doğrulanır; Teorem 4 eğrilikten tek analitik çizgi şekli $g_{\mathrm{vortex}}(x)$ türetilir (\textbf{Test T17}).
     \item 511 keV Ore--Powell baskı hatasının tam düzeltmesi: yalnız $(2m_e-E)^2$ payda ikamesinin $1/E$ kutbunu kaldırmaya yetmediği ($\int_1^{511}=27.147\ne1$) kanıtlanır ve basımda düşen $\ln(1-x)$ çarpanları geri konularak $O_{\mathrm{exact}}(0)=0$, $\int_0^{m_e} O_{\mathrm{exact}}\,dE = 0.9999999999995262$ elde edilir; $\Lambda_{\mathrm{Meral}}^{(0)}$ üzerinden Bulge, ISM ve Samanyolu+HVC ($2\times10^{43}$, $5\times10^{43}$, $10^{44}\text{ e}^+\text{/s}$) rejimleri belirlenir (\textbf{Test T18}).
     \item CERN BASE-STEP (Eylül 2026 \textit{Nature}) karayolu taşıması: $N_{\bar{p}}=92$ antiprotonun $7.5\text{ km}$ / $24\text{ dk}$ sürüşte $\Delta C=20\text{ fF}$ ($\Delta f_{\mathrm{res}}=122\text{ Hz}$) dispersif tel bozulmasına rağmen Teorem 5 FENE-P Lyapunov potansiyeli altında $r_-^{\max} = 0.153\,\mu\text{m} \ll R_{\mathrm{trap}}=5.0\text{ mm}$ ($B_0=0.993\text{ T}$) ile kilitlenerek $92/92$ (\%100 hayatta kalma, $M_{\mathrm{safety}} = 2.55\times 10^7$) korunduğu kanıtlanır (\textbf{Test T19}).
 \end{enumerate}
@@ -97,12 +97,12 @@ Cıvıltı kazancı ($T_{\mathrm{trap}}=0.5$ K) & $1.0893745115$ \\
 
 \section{Görev 12 / Test T17 --- Analitik Hiperince Çizgi Şekli ve $1.03/1.07\text{ T}$ Çift-Alan Akı Sürüklenmesi}
 
-Kodun kendi $m_F$ etiketli Breit--Rabi Hamiltonyeninden $B_1=1.03\text{ T}$ ve $B_2=1.07\text{ T}$ deney noktalarında $\partial f_{da}/\partial B = 28.0182196080$ ve $28.0187133982\text{ GHz/T}$ bulunur (Tablo~\ref{tab:t17}). Deneysel $\dot{f}_{\mathrm{exp},1}=-72.82\text{ kHz/saat}$ ve $\dot{f}_{\mathrm{exp},2}=-75.64\text{ kHz/saat}$ [8] sürüklenmeleri:
+Kodun kendi $m_F$ etiketli Breit--Rabi Hamiltonyeninden $B_1=1.03\text{ T}$ ve $B_2=1.07\text{ T}$ deney noktalarında $\partial f_{da}/\partial B = 28.0080433257$ ve $28.0092817921\text{ GHz/T}$ bulunur (Tablo~\ref{tab:t17}). Deneysel $\dot{f}_{\mathrm{exp},1}=-72.82\text{ kHz/saat}$ ve $\dot{f}_{\mathrm{exp},2}=-75.64\text{ kHz/saat}$ [8] sürüklenmeleri:
 \begin{equation}
-\dot{B}_1 = -2.5990\,\mu\text{T/saat}, \quad \dot{B}_2 = -2.6996\,\mu\text{T/saat}, \quad \gamma_{\mathrm{flux}} = 7.01\times 10^{-10}\text{/s},
+\dot{B}_1 = -2.6000\,\mu\text{T/saat}, \quad \dot{B}_2 = -2.7005\,\mu\text{T/saat}, \quad \gamma_{\mathrm{flux}} = 7.01\times 10^{-10}\text{/s},
 \label{eq:fluxdrift}
 \end{equation}
-vererek doğrudan ECR ölçümleriyle ($-2.50\pm0.10$ ve $-2.60\pm0.10\,\mu\text{T/saat}$) $0.99\sigma$ ve $1.00\sigma$ içinde uyuşur. Abrikosov gevşeme yasası $\dot{B}=-\gamma_{\mathrm{flux}}B_0$ altında sıfır-parametreli çift-alan sürüklenme oranı $R_{\mathrm{th}} = 1.0388532598$, deneysel $R_{\mathrm{exp}} = (-75.64)/(-72.82) = 1.0387256248$ ile $\vert{}\Delta R\vert{} = 1.28\times 10^{-4}$ ($123\text{ ppm}$; saf $B_2/B_1$ ile $1.09\times 10^{-4}$) mertebesinde örtüşür.
+vererek doğrudan ECR ölçümleriyle ($-2.50\pm0.10$ ve $-2.60\pm0.10\,\mu\text{T/saat}$) $1.00\sigma$ ve $1.01\sigma$ içinde uyuşur. Abrikosov gevşeme yasası $\dot{B}=-\gamma_{\mathrm{flux}}B_0$ altında sıfır-parametreli çift-alan sürüklenme oranı $R_{\mathrm{th}} = 1.0388808869$, deneysel $R_{\mathrm{exp}} = (-75.64)/(-72.82) = 1.0387256248$ ile $\vert{}\Delta R\vert{} = 1.55\times 10^{-4}$ ($155\text{ ppm}$; saf $B_2/B_1$ ile $1.09\times 10^{-4}$) mertebesinde örtüşür.
 
 Detuning $x=(f-f_o)/\sigma_0\ge0$ radyal benzerlik koordinatıyla eşlenince yok oluş hızı Teorem 4 eğrilikten (Şekil~\ref{fig:fig9}(b)):
 \begin{equation}
@@ -122,9 +122,9 @@ g_{\mathrm{vortex}}(x) = \mathcal{N}_g\,\Theta(x)\,\frac{x^2}{(1+x/X_0)^{2+q_{\m
 \hline
 Büyüklük & Değer \\
 \hline
-$1.03\text{ T}$: $df_{da}/dB$ / $\dot{B}_1$ (ECR $-2.50\pm0.10$) & $28.0182196080$ GHz/T / $-2.5990231006\,\mu$T/saat ($0.99\sigma$) \\
-$1.07\text{ T}$: $df_{da}/dB$ / $\dot{B}_2$ (ECR $-2.60\pm0.10$) & $28.0187133982$ GHz/T / $-2.6996243163\,\mu$T/saat ($1.00\sigma$) \\
-Çift-alan oranı $R_{\mathrm{th}}$ vs.\ $R_{\mathrm{exp}}$ / $\vert{}\Delta R\vert{}$ & $1.0388532598$ vs.\ $1.0387256248$ / $1.28\times10^{-4}$ \\
+$1.03\text{ T}$: $df_{da}/dB$ / $\dot{B}_1$ (ECR $-2.50\pm0.10$) & $28.0080433257$ GHz/T / $-2.5999674148\,\mu$T/saat ($1.00\sigma$) \\
+$1.07\text{ T}$: $df_{da}/dB$ / $\dot{B}_2$ (ECR $-2.60\pm0.10$) & $28.0092817921$ GHz/T / $-2.7005333647\,\mu$T/saat ($1.01\sigma$) \\
+Çift-alan oranı $R_{\mathrm{th}}$ vs.\ $R_{\mathrm{exp}}$ / $\vert{}\Delta R\vert{}$ & $1.0388808869$ vs.\ $1.0387256248$ / $1.55\times10^{-4}$ \\
 $\mathcal{N}_g^{-1}$ / $k_{\mathrm{esik}}$ / $k_{\mathrm{kuyruk}}$ & $0.3013093980$ / $1.9935352313$ / $-1.8084256374$ \\
 $x_{\max}$ / konvolüsyon kayması ($\sigma_b=10$ kHz) & $1.0156678089$ / $+4.65$ kHz \\
 \hline

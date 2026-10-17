@@ -30,7 +30,7 @@
 As the 7th link of the Theorems I--VI series, this work applies the September 2026 Navier--Stokes--FENE-P inner-core vortex dynamics to four open laboratory/observational problems of the 2025--2026 CERN antimatter program:
 \begin{enumerate}
     \item ALPHA 2025 SDR-EVC ``rotating wall'' torque discrepancy: the no-slip ideal radius $r_p^{\mathrm{ideal}} = 0.0988849784\text{ mm}$ ($< 0.16\text{ mm}$) over-compresses; Theorem V backreaction gives $\mu_s^* = 0.20317683698063987$ (\texttt{brentq}, residual $< 10^{-12}\text{ m}$). Substituting with zero free parameters the Theorem 6 constant $\mu_s^{\mathrm{Meral}} = 2\sqrt{2}\Lambda_{\mathrm{Meral}}^{(0)} = 0.2044088237$ (0.61\% agreement) and Theorem 2 constant $\mu_s^{\mathrm{geom}} = \beta_0^2/(1+\beta_0^2) = 0.2000$ (1.56\% agreement) yields $r_p^{\mathrm{th}} = 0.16079\text{ mm}$ ($\vert{}\Delta r_p\vert{} = 0.79\,\mu\text{m}$); out-of-sample cross-validation on the $N_{e^+}=3.4\times 10^6$ positron plasma gives $r_p^{\mathrm{eff}}(e^+) = 0.4517\text{ mm}$, well inside the measured $[0.30, 0.50]\text{ mm}$ band (\textbf{Test T16}).
-    \item ALPHA 2026 4 ppm hyperfine resonance: the $B_1=1.03\text{ T}$ ($-72.82\text{ kHz/h}$) and $B_2=1.07\text{ T}$ ($-75.64\text{ kHz/h}$) drifts are tied via the Breit--Rabi slopes ($28.0182/28.0187\text{ GHz/T}$) to $\dot{B} = -2.599/-2.700\,\mu\text{T/h}$ ($1\sigma$ agreement with ECR $-2.50/-2.60\pm0.10\,\mu\text{T/h}$) and a zero-parameter ratio test $\vert{}R_{\mathrm{th}}-R_{\mathrm{exp}}\vert{} = 1.28\times 10^{-4}$; a single analytic lineshape $g_{\mathrm{vortex}}(x)$ is derived from Theorem 4 curvature (\textbf{Test T17}).
+    \item ALPHA 2026 4 ppm hyperfine resonance: the $B_1=1.03\text{ T}$ ($-72.82\text{ kHz/h}$) and $B_2=1.07\text{ T}$ ($-75.64\text{ kHz/h}$) drifts are tied via the Breit--Rabi slopes ($28.0080/28.0093\text{ GHz/T}$) to $\dot{B} = -2.600/-2.701\,\mu\text{T/h}$ ($1\sigma$ agreement with ECR $-2.50/-2.60\pm0.10\,\mu\text{T/h}$) and a zero-parameter ratio test $\vert{}R_{\mathrm{th}}-R_{\mathrm{exp}}\vert{} = 1.55\times 10^{-4}$; a single analytic lineshape $g_{\mathrm{vortex}}(x)$ is derived from Theorem 4 curvature (\textbf{Test T17}).
     \item Exact correction of the 511 keV Ore--Powell misprint: it is proved that the $(2m_e-E)^2$ denominator replacement alone leaves a $1/E$ pole ($\int_1^{511}=27.147\ne1$) and that restoring the dropped $\ln(1-x)$ factors gives $O_{\mathrm{exact}}(0)=0$, $\int_0^{m_e} O_{\mathrm{exact}}\,dE = 0.9999999999995262$; via $\Lambda_{\mathrm{Meral}}^{(0)}$ the Bulge, ISM, and Milky Way+HVC ($2\times10^{43}$, $5\times10^{43}$, $10^{44}\text{ e}^+\text{/s}$) regimes are determined (\textbf{Test T18}).
     \item CERN BASE-STEP (September 2026 \textit{Nature}) road transport: despite the vibration-induced $\Delta C=20\text{ fF}$ ($\Delta f_{\mathrm{res}}=122\text{ Hz}$) wire deformation over $7.5\text{ km}$ / $24\text{ min}$, the Theorem 5 FENE-P Lyapunov potential locks the magnetron radius at $r_-^{\max} = 0.153\,\mu\text{m} \ll R_{\mathrm{trap}}=5.0\text{ mm}$ ($B_0=0.993\text{ T}$), guaranteeing $92/92$ (100\% survival, $M_{\mathrm{safety}} = 2.55\times 10^7$) (\textbf{Test T19}).
 \end{enumerate}
@@ -96,12 +96,12 @@ Chirp gain ($T_{\mathrm{trap}}=0.5$ K) & $1.0893745115$ \\
 
 \section{Task 12 / Test T17 --- Analytic Hyperfine Lineshape and $1.03/1.07\text{ T}$ Dual-Field Flux Drift}
 
-From the code's own $m_F$-labelled Breit--Rabi Hamiltonian at $B_1=1.03\text{ T}$ and $B_2=1.07\text{ T}$, $\partial f_{da}/\partial B = 28.0182196080$ and $28.0187133982\text{ GHz/T}$ (Table~\ref{tab:t17}). The measured $\dot{f}_{\mathrm{exp},1}=-72.82\text{ kHz/h}$ and $\dot{f}_{\mathrm{exp},2}=-75.64\text{ kHz/h}$ drifts [8] give
+From the code's own $m_F$-labelled Breit--Rabi Hamiltonian at $B_1=1.03\text{ T}$ and $B_2=1.07\text{ T}$, $\partial f_{da}/\partial B = 28.0080433257$ and $28.0092817921\text{ GHz/T}$ (Table~\ref{tab:t17}). The measured $\dot{f}_{\mathrm{exp},1}=-72.82\text{ kHz/h}$ and $\dot{f}_{\mathrm{exp},2}=-75.64\text{ kHz/h}$ drifts [8] give
 \begin{equation}
-\dot{B}_1 = -2.5990\,\mu\text{T/h}, \quad \dot{B}_2 = -2.6996\,\mu\text{T/h}, \quad \gamma_{\mathrm{flux}} = 7.01\times 10^{-10}\text{/s},
+\dot{B}_1 = -2.6000\,\mu\text{T/h}, \quad \dot{B}_2 = -2.7005\,\mu\text{T/h}, \quad \gamma_{\mathrm{flux}} = 7.01\times 10^{-10}\text{/s},
 \label{eq:fluxdrift}
 \end{equation}
-agreeing within $0.99\sigma$ and $1.00\sigma$ with the direct ECR measurements ($-2.50\pm0.10$ and $-2.60\pm0.10\,\mu\text{T/h}$). Under the Abrikosov relaxation law $\dot{B}=-\gamma_{\mathrm{flux}}B_0$ the zero-parameter dual-field drift ratio $R_{\mathrm{th}} = 1.0388532598$ matches $R_{\mathrm{exp}} = (-75.64)/(-72.82) = 1.0387256248$ to $\vert{}\Delta R\vert{} = 1.28\times 10^{-4}$ ($123\text{ ppm}$; $1.09\times 10^{-4}$ for pure $B_2/B_1$).
+agreeing within $1.00\sigma$ and $1.01\sigma$ with the direct ECR measurements ($-2.50\pm0.10$ and $-2.60\pm0.10\,\mu\text{T/h}$). Under the Abrikosov relaxation law $\dot{B}=-\gamma_{\mathrm{flux}}B_0$ the zero-parameter dual-field drift ratio $R_{\mathrm{th}} = 1.0388808869$ matches $R_{\mathrm{exp}} = (-75.64)/(-72.82) = 1.0387256248$ to $\vert{}\Delta R\vert{} = 1.55\times 10^{-4}$ ($155\text{ ppm}$; $1.09\times 10^{-4}$ for pure $B_2/B_1$).
 
 Mapping detuning $x=(f-f_o)/\sigma_0\ge0$ to the radial similarity coordinate, the loss rate follows from Theorem 4 curvature (Figure~\ref{fig:fig9}(b)):
 \begin{equation}
@@ -121,9 +121,9 @@ g_{\mathrm{vortex}}(x) = \mathcal{N}_g\,\Theta(x)\,\frac{x^2}{(1+x/X_0)^{2+q_{\m
 \hline
 Quantity & Value \\
 \hline
-$1.03\text{ T}$: $df_{da}/dB$ / $\dot{B}_1$ (ECR $-2.50\pm0.10$) & $28.0182196080$ GHz/T / $-2.5990231006\,\mu$T/h ($0.99\sigma$) \\
-$1.07\text{ T}$: $df_{da}/dB$ / $\dot{B}_2$ (ECR $-2.60\pm0.10$) & $28.0187133982$ GHz/T / $-2.6996243163\,\mu$T/h ($1.00\sigma$) \\
-Dual-field ratio $R_{\mathrm{th}}$ vs.\ $R_{\mathrm{exp}}$ / $\vert{}\Delta R\vert{}$ & $1.0388532598$ vs.\ $1.0387256248$ / $1.28\times10^{-4}$ \\
+$1.03\text{ T}$: $df_{da}/dB$ / $\dot{B}_1$ (ECR $-2.50\pm0.10$) & $28.0080433257$ GHz/T / $-2.5999674148\,\mu$T/h ($1.00\sigma$) \\
+$1.07\text{ T}$: $df_{da}/dB$ / $\dot{B}_2$ (ECR $-2.60\pm0.10$) & $28.0092817921$ GHz/T / $-2.7005333647\,\mu$T/h ($1.01\sigma$) \\
+Dual-field ratio $R_{\mathrm{th}}$ vs.\ $R_{\mathrm{exp}}$ / $\vert{}\Delta R\vert{}$ & $1.0388808869$ vs.\ $1.0387256248$ / $1.55\times10^{-4}$ \\
 $\mathcal{N}_g^{-1}$ / $k_{\mathrm{thr}}$ / $k_{\mathrm{tail}}$ & $0.3013093980$ / $1.9935352313$ / $-1.8084256374$ \\
 $x_{\max}$ / convolution shift ($\sigma_b=10$ kHz) & $1.0156678089$ / $+4.65$ kHz \\
 \hline
